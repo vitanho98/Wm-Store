@@ -1,0 +1,284 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+/* NavBar */
+
+.cabecalho {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    background: rgb(232,149,149);
+    background: linear-gradient(90deg, rgba(232,149,149,1) 0%, rgba(76,152,244,1) 100%);
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul li a, .navbar ul li{
+    color: #f5f5f5;
+    transition: transform .3s ease;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.2);
+}
+
+/*Menu Hamburger*/
+.hamburger-menu {
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.menuList {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #131313;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -100vw;
+    gap: 10px;
+    transition: all .4s ease;
+    z-index: 988;
+}
+
+.menuList ul li a {
+    color: #EEE;
+}
+
+.menuOpen {
+    margin-right: 0;
+}
+
+/*Fim NavBar */
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.roupa-imagem {
+    border-radius: 20px;
+    transition: transform .3s ease;
+    box-shadow: 10px 10px 30px rgba(70, 65, 65, 0.459);
+    margin-top: 10px;
+}
+
+.item:hover {
+    transform: translateY(-20px);
+}
+
+#Produtos h1 {
+    color: #000000;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#Produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.item:hover img {
+    background-color: black;
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.item {
+    position: relative;
+    transition: 0.6s ;
+}
+
+.item .conteudo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: rgb(22, 11, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.item:hover .conteudo  {
+    opacity: 1;
+}
+
+.item .conteudo p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: crimson;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+/* Estilos para o footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+    /* Espaçamento e margens para tornar o footer mais agradável visualmente */
+    padding: 20px;
+}
+
+/* Estilize os elementos dentro do footer conforme necessário */
+.footer h3 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+/* Estilize a imagem do logo */
+.footer img {
+    width: 80px; 
+    height: auto; 
+}
+
+/* Estilize os ícones de redes sociais conforme necessário */
+.footer .social-media img {
+    width: 30px; 
+    height: auto; 
+    margin: 5px; 
+}
+
+/* Estilize o aviso de direitos autorais */
+.footer .copyright {
+    margin-top: 10px; 
+    font-size: 0.9rem; 
+}
+
+
+/*Sobre*/
+
+.About h1{
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 50px 50px;
+}
+
+.About, p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+/*Fim-Footer*/
+
+/*Inicio estilização ScrollBar*/
+::-webkit-scrollbar {
+    width: 8px; /* Define a largura da scrollbar */
+    background-color: #ccc;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px; /* Adiciona uma pequena curvatura às bordas do polegar */
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+/*Fim estilização ScrollBar*/
+
+/*Inicio da Responsividade*/
+@media (max-width: 750px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+    padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburger-menu {
+    display: flex;
+    position: fixed;
+    }
+
+    .navbar {
+        opacity: 0;
+        padding: 20px;
+        display: none;
+    }
+}
+/*Fim da Responsividade*/
+/*Feito por Weslem*/

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cartão de Crédito</title>
+  <link rel="stylesheet" href="compra.css">
+</head>
+
+<body>
+
+  <section class="Home">
+
+    <a href="index.html" class="returnButton"><img width="70px" src="imagem/iconHome-removebg-preview.png" alt=""></a>
+
+    <div class="containerImg">
+      <img class="img1" src="imagem/Cartao1-removebg-preview.png" alt="Cartão de Credito">
+      <img class="img2" src="imagem/Cartao2-removebg-preview.png" alt="Cartão de Credito reverso">
+    </div>
+
+    <div class="container">
+      <div class="form-container">
+
+        <form action="index.html" id="myForm">
+
+          <label for="cardNumber">Número do Cartão:</label>
+          <input type="number" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+          <label for="cardName">Nome no Cartão:</label>
+          <input type="text" id="cardName" name="cardName" placeholder="Seu Nome" required>
+
+          <div class="form-row">
+            <div class="form-col">
+              <label for="cardMonth">Mês de Expiração:</label>
+              <select id="cardMonth" name="cardMonth" required>
+                <option value="" disabled selected>Mês</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <!-- Adicione os outros meses aqui -->
+              </select>
+            </div>
+            <div class="form-col">
+              <label for="cardYear">Ano de Expiração:</label>
+              <select id="cardYear" name="cardYear" required>
+                <option value="" disabled selected>Ano</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2024">2025</option>
+                <option value="2024">2026</option>
+                <option value="2024">2027</option>
+                <!-- Adicione os outros anos aqui -->
+              </select>
+            </div>
+          </div>
+
+          <label for="cardCvv">CVV:</label>
+          <input type="number" id="cardCvv" name="cardCvv" placeholder="123" min="0" required>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <footer>
+      <div class="security">
+        <p>© 2023 WMStore. Todos os direitos reservados.</p>
+        <p>Segurança de Dados | Política de Privacidade | Termos de Uso</p>
+      </div>
+    </footer>
+  </section>
+
+</body>
+
+</html>
+<!-- /*Feito por Weslem e Artur*/ -->
