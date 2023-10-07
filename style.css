@@ -78,13 +78,17 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: -100vw;
-    gap: 10px;
     transition: all .4s ease;
     z-index: 988;
 }
 
 .menuList ul li a {
     color: #EEE;
+    letter-spacing: 10px;
+}
+
+.menuList ul li {
+    margin-bottom: 10px;
 }
 
 .menuOpen {
@@ -234,12 +238,12 @@ button {
 .sobre h1{
     font-size: xx-large;
     font-weight: bold;
-    padding: 50px 50px;
+    padding: 50px 0px 20px;
 }
 
 .sobre p {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px 0px;
     max-width: 600px;
 }
 
